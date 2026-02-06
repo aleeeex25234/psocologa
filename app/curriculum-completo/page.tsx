@@ -38,7 +38,7 @@ export default function Curriculum() {
                             <CVItem text="Experta en Clínica e Intervención en Trauma y EMDR por la Sociedad Española de Medicina Psicosomática y Psicoterapia SEMPYP." />
                             <CVItem text="Curso de Extensión Universitaria 'La terapia EMDR y el manejo del Trauma' impartido por Anabel González por la UNED." />
                             <CVItem text="Curso 'El abuso sexual y su influencia en las patologías alimentarias y de imagen corporal' dirigido por Natalia Seijo por la AEFDP." />
-                            <CVItem text="Curso 'Apego y trastornos del comportamiento alimentario' impartido por Natalia Seijo por la AEFDP." />
+                            <CVItem text="Curso 'Apego y trastornos del comportamiento alimentarios' impartido por Natalia Seijo por la AEFDP." />
                             <CVItem text="Master Class 'Atendiendo el Trauma preverbal con IFS' impartido por Collen West por el Centro 'Acerca de Psicoterapia'." />
                             <CVItem text="Máster Class 'Finding Solid Ground' con Bethany Brand y Ruth Lanius, Centro Cuatro Ciclos." />
                             <CVItem text="Curso 'Ejercicios para conocer y sanar tus partes' dirigido por Saúl Perez." />
