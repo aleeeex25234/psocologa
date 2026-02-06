@@ -172,44 +172,43 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Extra Questions Section - Transparent background to show main gradient */}
-      <section className="w-full bg-transparent py-10 md:py-24">
-        <div className="max-w-6xl mx-auto px-4 md:px-6 relative">
-          <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
-            <div className="text-center space-y-3 md:space-y-4">
-              <Link href="/psicoterapia-integrativa">
-                <h3 className="font-sans text-2xl md:text-3xl text-gray-700 font-bold underline decoration-[#749B8F] decoration-2 underline-offset-8 hover:text-[#749B8F] transition-colors cursor-pointer">
-                  ¿Qué es la Psicoterapia <br /> Integrativa?
-                </h3>
-              </Link>
-            </div>
-            <div className="text-center space-y-4 relative">
-              <Link href="/psicoterapia-individual">
-                <h3 className="font-sans text-2xl md:text-3xl text-gray-700 font-bold underline decoration-[#749B8F] decoration-2 underline-offset-8 hover:text-[#749B8F] transition-colors cursor-pointer">
-                  ¿Qué es la Psicoterapia <br /> individual?
-                </h3>
-              </Link>
+      <div className="flex flex-col md:block">
+        {/* Quote Section - Shows first on mobile, second on desktop */}
+        <section className="w-full bg-transparent py-10 md:py-20 relative order-1 md:order-2">
+          <div className="max-w-4xl mx-auto px-4 md:px-8">
+            <div className="bg-white p-6 md:p-16 rounded-2xl md:rounded-[2rem] shadow-sm border border-[#749B8F]/10 text-center relative z-10 transition-transform hover:scale-[1.01] duration-500">
+              <Quote className="mx-auto text-[#749B8F]/40 mb-4 md:mb-8 rotate-180" size={32} fill="currentColor" />
+              <p className="font-serif italic text-base md:text-3xl text-gray-700 leading-relaxed mb-4 md:mb-8">
+                "Si cuidas tu mente, tu mente cuidará de ti. Es tan importante atender lo que sentimos como lo que nos duele"
+              </p>
+              <div className="w-12 md:w-16 h-0.5 bg-[#749B8F]/30 mx-auto mb-4 md:mb-6"></div>
+              <p className="text-[#749B8F] text-xs md:text-sm tracking-[0.2em] uppercase font-bold">Thich Nhat Hanh</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Decorative Separator */}
-      {/* Decorative Separator Removed */}
-
-      {/* Quote Section - Transparent background to show main gradient */}
-      <section className="w-full bg-transparent py-10 md:py-20 relative">
-        <div className="max-w-4xl mx-auto px-4 md:px-8">
-          <div className="bg-white p-6 md:p-16 rounded-2xl md:rounded-[2rem] shadow-sm border border-[#749B8F]/10 text-center relative z-10 transition-transform hover:scale-[1.01] duration-500">
-            <Quote className="mx-auto text-[#749B8F]/40 mb-4 md:mb-8 rotate-180" size={32} fill="currentColor" />
-            <p className="font-serif italic text-base md:text-3xl text-gray-700 leading-relaxed mb-4 md:mb-8">
-              "Si cuidas tu mente, tu mente cuidará de ti. Es tan importante atender lo que sentimos como lo que nos duele"
-            </p>
-            <div className="w-12 md:w-16 h-0.5 bg-[#749B8F]/30 mx-auto mb-4 md:mb-6"></div>
-            <p className="text-[#749B8F] text-xs md:text-sm tracking-[0.2em] uppercase font-bold">Thich Nhat Hanh</p>
+        {/* Extra Questions Section - Shows second on mobile, first on desktop */}
+        <section className="w-full bg-transparent py-10 md:py-24 order-2 md:order-1">
+          <div className="max-w-6xl mx-auto px-4 md:px-6 relative">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
+              <div className="text-center space-y-3 md:space-y-4">
+                <Link href="/psicoterapia-integrativa">
+                  <h3 className="font-sans text-2xl md:text-3xl text-gray-700 font-bold underline decoration-[#749B8F] decoration-2 underline-offset-8 hover:text-[#749B8F] transition-colors cursor-pointer">
+                    ¿Qué es la Psicoterapia <br /> Integrativa?
+                  </h3>
+                </Link>
+              </div>
+              <div className="text-center space-y-4 relative">
+                <Link href="/psicoterapia-individual">
+                  <h3 className="font-sans text-2xl md:text-3xl text-gray-700 font-bold underline decoration-[#749B8F] decoration-2 underline-offset-8 hover:text-[#749B8F] transition-colors cursor-pointer">
+                    ¿Qué es la Psicoterapia <br /> individual?
+                  </h3>
+                </Link>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* Footer */}
       <footer className="w-full bg-[#4A635D] text-white pt-10 pb-6 md:pt-20 md:pb-12">
