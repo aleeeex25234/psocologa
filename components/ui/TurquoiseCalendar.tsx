@@ -32,19 +32,19 @@ export function TurquoiseCalendar({ onSelect, selectedDate }: { onSelect: (date:
 
   return (
     <div
-      className="p-0 sm:p-6 bg-white sm:rounded-3xl sm:shadow-xl sm:border border-gray-100 font-sans w-full max-w-none sm:max-w-lg mx-auto"
+      className="p-4 sm:p-6 bg-white rounded-3xl shadow-sm border border-gray-50 font-sans w-full max-w-none sm:max-w-lg mx-auto"
       suppressHydrationWarning
     >
-      <div suppressHydrationWarning className="flex items-center justify-between mb-12 px-4 sm:px-0">
-        <h3 className="font-serif text-7xl sm:text-4xl font-black text-slate-800 capitalize tracking-tighter">
+      <div suppressHydrationWarning className="flex items-center justify-between mb-8 px-4 sm:px-0">
+        <h3 className="font-sans text-xl sm:text-2xl font-bold text-slate-800 capitalize tracking-tight">
           {format(currentMonth, 'MMMM yyyy', { locale: es })}
         </h3>
-        <div className="flex gap-10 sm:gap-2">
-          <button onClick={prevMonth} className="p-6 sm:p-2 hover:bg-turquoise-50 rounded-full text-turquoise-600 transition-colors shadow-2xl sm:shadow-none bg-white sm:bg-transparent border border-gray-100 sm:border-0"><ChevronLeft className="w-16 h-16 sm:w-5 sm:h-5" /></button>
-          <button onClick={nextMonth} className="p-6 sm:p-2 hover:bg-turquoise-50 rounded-full text-turquoise-600 transition-colors shadow-2xl sm:shadow-none bg-white sm:bg-transparent border border-gray-100 sm:border-0"><ChevronRight className="w-16 h-16 sm:w-5 sm:h-5" /></button>
+        <div className="flex gap-2">
+          <button onClick={prevMonth} className="p-2 hover:bg-turquoise-50 rounded-full text-turquoise-600 transition-colors border border-gray-100 sm:border-0"><ChevronLeft className="w-5 h-5" /></button>
+          <button onClick={nextMonth} className="p-2 hover:bg-turquoise-50 rounded-full text-turquoise-600 transition-colors border border-gray-100 sm:border-0"><ChevronRight className="w-5 h-5" /></button>
         </div>
       </div>
-      <div suppressHydrationWarning className="grid grid-cols-7 gap-0 text-center text-2xl font-black text-slate-200 mb-12 uppercase tracking-tighter sm:px-0">
+      <div suppressHydrationWarning className="grid grid-cols-7 gap-0 text-center text-xs font-bold text-slate-300 mb-8 uppercase tracking-widest sm:px-0">
         <span>D</span><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span>
       </div>
       <div suppressHydrationWarning className="grid grid-cols-7 gap-0 justify-items-center">
@@ -65,9 +65,9 @@ export function TurquoiseCalendar({ onSelect, selectedDate }: { onSelect: (date:
               suppressHydrationWarning
               onClick={() => onSelect(day)}
               className={cn(
-                "h-[16vw] w-[16vw] sm:h-12 sm:w-12 rounded-[2.5rem] flex items-center justify-center text-6xl sm:text-lg font-black transition-all duration-300",
+                "h-10 w-10 sm:h-12 sm:w-12 rounded-xl flex items-center justify-center text-sm sm:text-lg font-bold transition-all duration-300",
                 isSelected
-                  ? "bg-turquoise-500 text-white shadow-3xl shadow-turquoise-500/60 scale-110 z-10"
+                  ? "bg-turquoise-500 text-white shadow-xl shadow-turquoise-500/60 scale-110 z-10"
                   : "hover:bg-turquoise-50 text-slate-900 bg-slate-50/30",
                 isDisabled ? "opacity-5 cursor-not-allowed bg-transparent" : ""
               )}

@@ -87,14 +87,17 @@ export default function BookingPage() {
   }
 
   return (
-    <main suppressHydrationWarning className="min-h-screen bg-white flex justify-center py-4 md:py-16 px-0 md:px-12 font-sans overflow-x-hidden">
-      <div suppressHydrationWarning className="w-full max-w-full lg:max-w-7xl space-y-12 md:space-y-16">
+    <main suppressHydrationWarning className="min-h-screen bg-[radial-gradient(circle_at_top_left,_#749B8F45_0%,_transparent_85%)] bg-white flex justify-center py-12 md:py-24 px-4 md:px-12 font-sans overflow-x-hidden">
+      <div suppressHydrationWarning className="w-full max-w-7xl space-y-16">
 
         {/* Header & Intro */}
-        <div suppressHydrationWarning className="text-center space-y-8 px-4">
-          <h1 className="font-serif text-5xl md:text-6xl font-black text-slate-900 leading-[1.1] mx-auto max-w-4xl tracking-tighter">
-            Agenda tu cita conmigo.<br /><span className="text-turquoise-500">Elena Cervera Psicóloga</span>
+        <div suppressHydrationWarning className="text-center space-y-4 px-4 mb-8">
+          <h1 className="font-sans text-2xl md:text-5xl font-bold text-slate-900 tracking-tight">
+            Agenda tu cita <span className="text-[#749B8F]">conmigo</span>
           </h1>
+          <p className="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
+            Selecciona el día y la hora que mejor te convenga para comenzar tu proceso.
+          </p>
         </div>
 
         <div suppressHydrationWarning className="flex flex-col gap-12 items-center lg:grid lg:grid-cols-2 lg:gap-16 lg:items-start w-full">
@@ -106,7 +109,7 @@ export default function BookingPage() {
 
             {selectedDate && (
               <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 max-w-md mx-auto w-full px-2">
-                <h3 className="font-serif text-2xl text-slate-800 mb-6 font-bold text-center">Horas Disponibles</h3>
+                <h3 className="font-sans text-xl text-slate-800 mb-6 font-bold text-center">Horas Disponibles</h3>
                 <div className="grid grid-cols-3 md:grid-cols-4 gap-3 md:gap-3 relative">
                   {fetchingSlots && (
                     <div className="absolute inset-0 bg-white/50 backdrop-blur-[1px] z-10 flex items-center justify-center rounded-xl">
@@ -121,12 +124,12 @@ export default function BookingPage() {
                         disabled={isBooked}
                         onClick={() => setSelectedTime(time)}
                         className={cn(
-                          "py-4 lg:py-2 px-1 lg:px-6 rounded-xl !text-2xl lg:!text-sm font-semibold transition-all border relative overflow-hidden",
+                          "py-3 px-4 rounded-xl text-lg lg:text-sm font-bold transition-all border",
                           selectedTime === time
-                            ? "bg-turquoise-500 text-white border-turquoise-500 shadow-md scale-105"
+                            ? "bg-[#749B8F] text-white border-[#749B8F] shadow-lg shadow-[#749B8F]/20 scale-105"
                             : isBooked
-                              ? "bg-gray-50 text-gray-300 border-gray-100 cursor-not-allowed"
-                              : "bg-white text-slate-600 border-gray-200 hover:border-turquoise-300 shadow-sm"
+                              ? "bg-gray-50 text-gray-300 border-gray-100 cursor-not-allowed opacity-50"
+                              : "bg-white text-slate-600 border-gray-100 hover:border-[#749B8F]/30 shadow-sm"
                         )}
                       >
                         {time}
@@ -139,8 +142,8 @@ export default function BookingPage() {
           </div>
 
           {/* Step 2: Form */}
-          <div suppressHydrationWarning className="bg-gray-50 p-12 sm:p-10 md:p-14 rounded-[3rem] shadow-2xl shadow-gray-200/50 w-full border border-gray-200">
-            <h2 className="font-serif text-[4rem] md:text-3xl text-slate-800 mb-20 font-black text-center tracking-tighter">Tus Datos</h2>
+          <div suppressHydrationWarning className="bg-white/60 backdrop-blur-sm p-8 md:p-12 rounded-[2.5rem] shadow-sm w-full border border-gray-100 flex flex-col items-center">
+            <h2 className="font-sans text-2xl md:text-3xl text-slate-800 mb-8 font-bold text-center tracking-tight">Tus Datos</h2>
 
             <Toast
               isVisible={!!toast}
@@ -173,8 +176,8 @@ export default function BookingPage() {
                     e.preventDefault();
                   }
                 }}
-                className="!text-xl lg:!text-base h-16 lg:h-12"
-                labelClassName="!text-lg lg:!text-base left-1 top-4 lg:top-3 peer-focus:!text-sm peer-not-placeholder-shown:!text-sm"
+                className="text-base h-12"
+                labelClassName="text-base left-1 top-3 peer-focus:!text-sm peer-not-placeholder-shown:!text-sm"
               />
 
               <div suppressHydrationWarning className="pt-8 space-y-8">
@@ -189,7 +192,7 @@ export default function BookingPage() {
                 <Button
                   type="submit"
                   disabled={loading || !selectedDate || !selectedTime}
-                  className="w-full py-10 sm:py-4 text-[2.5rem] sm:text-lg shadow-2xl shadow-turquoise-500/40 disabled:scale-100 font-black h-auto leading-tight"
+                  className="w-full py-4 text-lg bg-[#749B8F] hover:bg-[#63857a] shadow-lg shadow-[#749B8F]/20 disabled:scale-100 font-bold h-auto"
                 >
                   {loading ? 'Procesando...' : 'Confirmar Cita'}
                 </Button>

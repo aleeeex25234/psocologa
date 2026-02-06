@@ -7,14 +7,14 @@ body {
 }
 
 @theme {
-  --color-turquoise-50: #f0fdfa;
-  --color-turquoise-100: #ccfbf1;
-  --color-turquoise-200: #99f6e4;
-  --color-turquoise-300: #5eead4;
-  --color-turquoise-400: #2dd4bf;
-  --color-turquoise-500: #14b8a6;
-  --color-turquoise-600: #0d9488;
-  --color-turquoise-700: #0f766e;
+  --color-turquoise-50: #f4f7f6;
+  --color-turquoise-100: #e3ebe8;
+  --color-turquoise-200: #c4d7d1;
+  --color-turquoise-300: #9ebdb3;
+  --color-turquoise-400: #749B8F;
+  --color-turquoise-500: #749B8F;
+  --color-turquoise-600: #5d7c72;
+  --color-turquoise-700: #4a635b;
 
   --font-serif: var(--font-cormorant);
   --font-sans: var(--font-montserrat);

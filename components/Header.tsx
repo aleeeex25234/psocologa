@@ -16,10 +16,10 @@ export function Header() {
 
   return (
     <header className="w-full bg-white sticky top-0 z-50 border-b border-gray-200" suppressHydrationWarning>
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between" suppressHydrationWarning>
         {/* Logo and Title */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="relative w-12 h-12">
+          <div className="relative w-12 h-12" suppressHydrationWarning>
             <Image
               src="/Logo.png"
               alt="Elena Cervera Logo"
@@ -27,7 +27,7 @@ export function Header() {
               className="object-contain"
             />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col" suppressHydrationWarning>
             <span className="font-serif text-lg font-semibold text-slate-800">Elena Cervera</span>
             <span className="text-xs text-slate-600">Psicóloga - Psicoterapeuta</span>
           </div>
