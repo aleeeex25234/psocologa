@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Leaf, Info, MessageCircle, Heart, LifeBuoy } from "lucide-react";
+import { Leaf, MessageCircle } from "lucide-react";
 
 export default function ComoSaberSiEmpezar() {
     return (
@@ -13,25 +13,15 @@ export default function ComoSaberSiEmpezar() {
                 </div>
 
                 <div className="space-y-8 md:space-y-12 text-gray-600 leading-relaxed text-sm md:text-lg">
-                    <section className="bg-white/50 p-8 rounded-2xl border border-gray-100 shadow-sm space-y-6">
-                        <div className="flex items-center gap-3 text-[#749B8F] mb-4">
-                            <Info size={24} />
-                            <h2 className="text-lg md:text-2xl font-bold text-gray-800">¿Necesito ayuda?</h2>
-                        </div>
-
-                        <p className="text-justify font-medium text-gray-800">
+                    <section className="bg-white/50 p-8 rounded-2xl border border-gray-100 shadow-sm space-y-6 text-justify">
+                        <p className="font-medium text-gray-800">
                             Es completamente normal querer buscar alivio para el dolor. Ya sea que estés atravesando un duelo, enfrentando desafíos en el trabajo, lidiando con una enfermedad, enfrentando una ruptura o lidiando con un diagnóstico de trastorno emocional, tu sufrimiento es válido y merece atención.
                         </p>
-
-                        <div className="flex items-start gap-4 p-6 bg-[#749B8F]/5 rounded-xl border-l-4 border-[#749B8F]">
-                            <Heart className="text-[#749B8F] shrink-0 mt-1" size={24} />
-                            <p className="font-semibold text-gray-800">
-                                Lo importante es saber que se puede trabajar en ello y buscar ayuda.
-                            </p>
-                        </div>
-
-                        <p className="text-justify">
-                            El sufrimiento es una parte intrínseca de la vida, afectando a las cosas que valoramos y, en ocasiones, limitando áreas vitales, lo que conlleva a una sensación de fracaso y descontento personal. Reconocer este estado es el primer paso hacia la recuperación de tu bienestar.
+                        <p className="font-bold text-[#749B8F]">
+                            Lo importante es saber que se puede trabajar en ello y buscar ayuda.
+                        </p>
+                        <p>
+                            El sufrimiento es una parte intrínseca de la vida, afectando a las cosas que valoramos y, en ocasiones, limitando áreas vitales, lo que conlleva a una sensación de fracaso y descontento personal.
                         </p>
 
                         <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-center space-y-6 mt-8">

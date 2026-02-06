@@ -58,86 +58,28 @@ export default function Home() {
       </section>
 
       {/* Methodology Section */}
-      <section className="bg-transparent py-10 px-4 md:py-20 md:px-6 overflow-x-hidden">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20 items-stretch">
-
-          {/* Title - Shows first on mobile, second column on desktop */}
-          <div className="flex flex-col justify-center space-y-4 md:space-y-8 lg:pl-10 order-1 lg:order-2">
-            <h2 className="font-sans text-xl md:text-5xl font-bold text-gray-800 leading-tight">
-              Metodología entre sesiones <span className="text-[#749B8F]">conmigo</span>
+      <section className="bg-transparent py-10 px-4 md:py-24 md:px-6 overflow-x-hidden">
+        <div className="max-w-4xl mx-auto space-y-10 md:space-y-16">
+          <div className="text-center space-y-4">
+            <h2 className="font-sans text-2xl md:text-5xl font-bold text-gray-800 leading-tight">
+              Cómo funciona la <span className="text-[#749B8F]">terapia</span>
             </h2>
-
-            <div className="space-y-3 md:space-y-6 text-gray-600 text-xs md:text-lg leading-relaxed text-justify order-3 lg:order-2 mb-10 md:mb-0">
-              <p>
-                Es importante que la persona que vaya a terapia sepa que <strong className="font-semibold text-gray-700">"plan de ruta"</strong> vamos a llevar. Para que la intervención sea eficaz, es de vital importancia realizar una evaluación exhaustiva.
-              </p>
-              <p>
-                Gracias a esa evaluación sabremos sobre qué aspectos tendremos que aplicar el tratamiento. Tan importante como el tratamiento será la <strong className="font-semibold text-gray-700">prevención de recaídas</strong>. Ello hará que no volvamos a sufrir el mismo problema y nos dará habilidades para poder ser un poco más felices.
-              </p>
-              <p>
-                Un aspecto fundamental para cambiar aquello que nos preocupa, será también las <strong className="font-semibold text-gray-700">tareas para casa</strong>. Aprovecharemos para poner en práctica aquello que hemos aprendido en terapia y consolidar los avances en tu día a día.
-              </p>
-            </div>
+            <div className="w-16 h-1 bg-[#749B8F]/20 mx-auto rounded-full"></div>
           </div>
 
-          {/* Timeline - Shows second on mobile, first column on desktop */}
-          <div className="relative pl-0 md:pl-4 order-2 lg:order-1">
-            {/* Vertical Line - Centered relative to circles (w-12 mobile=24px center, w-16 desktop=32px center) */}
-            <div className="absolute left-6 md:left-[48px] top-0 bottom-0 w-[2px] -translate-x-1/2 bg-[#749B8F]/30 z-0"></div>
-
-            <div className="space-y-6 md:space-y-12 relative z-10">
-              {/* Node 1 */}
-              <div className="flex gap-4 md:gap-8 items-start group">
-                <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-white border-2 border-[#749B8F] flex items-center justify-center relative z-20 shadow-sm">
-                  <span className="text-2xl md:text-3xl font-bold text-[#749B8F]">1</span>
-                </div>
-                <div className="pt-1 md:pt-2">
-                  <h4 className="font-bold text-gray-800 uppercase tracking-wider mb-1 md:mb-2 text-lg">Sesión Inicial</h4>
-                  <p className="text-gray-600 text-xs md:text-base leading-relaxed">
-                    Nos conocemos y ponemos sobre la mesa aquello que nos preocupa. Establecemos las bases de la relación terapéutica.
-                  </p>
-                </div>
-              </div>
-
-              {/* Node 2 */}
-              <div className="flex gap-4 md:gap-8 items-start group">
-                <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-white border-2 border-[#749B8F] flex items-center justify-center relative z-20 shadow-sm">
-                  <span className="text-2xl md:text-3xl font-bold text-[#749B8F]">2</span>
-                </div>
-                <div className="pt-1 md:pt-2">
-                  <h4 className="font-bold text-gray-800 uppercase tracking-wider mb-2 text-lg">Evaluación</h4>
-                  <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                    Evaluamos y analizamos en profundidad el problema. Para poder hacer una buena intervención y diseñar un plan eficaz.
-                  </p>
-                </div>
-              </div>
-
-              {/* Node 3 */}
-              <div className="flex gap-4 md:gap-8 items-start group">
-                <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-white border-2 border-[#749B8F] flex items-center justify-center relative z-20 shadow-sm">
-                  <span className="text-2xl md:text-3xl font-bold text-[#749B8F]">3</span>
-                </div>
-                <div className="pt-1 md:pt-2">
-                  <h4 className="font-bold text-gray-800 uppercase tracking-wider mb-2 text-lg">Intervención</h4>
-                  <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                    Empezamos el tratamiento. Una pequeña parte didáctica y sobretodo práctica. Aplicamos técnicas para mejorar tu bienestar.
-                  </p>
-                </div>
-              </div>
-
-              {/* Node 4 */}
-              <div className="flex gap-4 md:gap-8 items-start group">
-                <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-white border-2 border-[#749B8F] flex items-center justify-center relative z-20 shadow-sm">
-                  <span className="text-2xl md:text-3xl font-bold text-[#749B8F]">4</span>
-                </div>
-                <div className="pt-1 md:pt-2">
-                  <h4 className="font-bold text-gray-800 uppercase tracking-wider mb-2 text-lg">Prevenir Recaídas</h4>
-                  <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                    Anticipar y afrontar problemas que tuvimos para no volver a caer en ellos. Te dotamos de autonomía futura.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div className="space-y-6 md:space-y-10 text-gray-600 text-xs md:text-lg px-6 md:px-0 leading-relaxed text-justify">
+            <p>
+              La terapia es un <strong>espacio de acompañamiento</strong> donde se explora la experiencia de la persona tal como ocurre en el presente. No se trata únicamente de hablar de lo que sucede, sino de <strong>comprender cómo se vive</strong>, cómo se siente en el cuerpo, qué emociones aparecen y qué formas habituales de relación se repiten.
+            </p>
+            <p>
+              El trabajo se centra en <strong>aumentar la conciencia sobre uno mismo</strong> y sobre la manera en que se afrontan las situaciones de la vida. A través de este proceso, la persona puede <strong>reconocer patrones que generan malestar</strong> y descubrir nuevas formas de responder, más ajustadas y auténticas.
+            </p>
+            <p>
+              La relación terapéutica se basa en la <strong>presencia, la escucha y el respeto</strong>. El terapeuta no dirige ni impone interpretaciones, sino que acompaña el proceso desde una posición cercana y profesional, favoreciendo un <strong>entorno seguro</strong> donde pueda emerger lo que necesita ser atendido.
+            </p>
+            <p>
+              El objetivo de la terapia no es cambiar a la persona, sino <strong>facilitar la comprensión, la integración y la capacidad de elección</strong>, promoviendo un <strong>mayor equilibrio y bienestar</strong> en la vida cotidiana.
+            </p>
           </div>
         </div>
       </section>
@@ -179,7 +121,10 @@ export default function Home() {
             <div className="bg-white p-6 md:p-16 rounded-2xl md:rounded-[2rem] shadow-sm border border-[#749B8F]/10 text-center relative z-10 transition-transform hover:scale-[1.01] duration-500">
               <Quote className="mx-auto text-[#749B8F]/40 mb-4 md:mb-8 rotate-180" size={32} fill="currentColor" />
               <p className="font-serif italic text-base md:text-3xl text-gray-700 leading-relaxed mb-4 md:mb-8">
-                "Si cuidas tu mente, tu mente cuidará de ti. Es tan importante atender lo que sentimos como lo que nos duele"
+                "Sin lodo no hay loto"
+                <span className="block text-sm md:text-xl mt-4 font-sans not-italic text-gray-500">
+                  Acogiendo y transformando nuestras experiencias más difíciles encontramos nuestra esencia
+                </span>
               </p>
               <div className="w-12 md:w-16 h-0.5 bg-[#749B8F]/30 mx-auto mb-4 md:mb-6"></div>
               <p className="text-[#749B8F] text-xs md:text-sm tracking-[0.2em] uppercase font-bold">Thich Nhat Hanh</p>
