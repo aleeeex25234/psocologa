@@ -9,7 +9,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-4 py-8 md:px-6 md:py-24">
         <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
           {/* Text Content - Left */}
-          <div className="order-1 md:order-1 space-y-3 md:space-y-4">
+          <div className="order-1 md:order-1 space-y-3 md:space-y-4 text-center md:text-left">
             <h1 className="font-sans text-2xl md:text-4xl font-bold text-gray-800 tracking-tight">
               Hola, soy Elena Cervera
             </h1>
