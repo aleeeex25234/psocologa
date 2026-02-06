@@ -15,7 +15,7 @@ export default function ComoSaberSiEmpezar() {
                 <div className="space-y-8 md:space-y-12 text-gray-600 leading-relaxed text-sm md:text-lg">
                     <section className="bg-white/50 p-8 rounded-2xl border border-gray-100 shadow-sm space-y-6 text-justify">
                         <p className="font-medium text-gray-800">
-                            Es completamente normal querer buscar alivio para el dolor. Ya sea que estés atravesando un duelo, enfrentando desafíos en el trabajo, lidiando con una enfermedad, enfrentando una ruptura o lidiando con un diagnóstico de trastorno emocional, tu sufrimiento es válido y merece atención.
+                            Es completamente normal querer buscar alivio para el dolor. Ya sea que estés atravesando un duelo, enfrentando desafíos en el trabajo, lidiando con una enfermedad o enfrentando una ruptura, tu sufrimiento es válido y merece atención.
                         </p>
                         <p className="font-bold text-[#749B8F]">
                             Lo importante es saber que se puede trabajar en ello y buscar ayuda.
