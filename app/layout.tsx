@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <body suppressHydrationWarning className={`${montserrat.variable} ${cormorant.variable} font-sans bg-white text-slate-800 antialiased`}>
+      <body suppressHydrationWarning className={`${montserrat.variable} ${cormorant.variable} font-sans bg-white text-slate-800 antialiased overflow-x-hidden`}>
         <Header />
         {children}
       </body>
