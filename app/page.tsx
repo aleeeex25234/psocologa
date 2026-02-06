@@ -28,8 +28,8 @@ export default function Home() {
           </div>
 
           {/* Photo - Right */}
-          <div className="order-2 md:order-2 flex justify-end">
-            <div className="relative w-48 h-48 md:w-[400px] md:h-[400px]">
+          <div className="order-2 md:order-2 flex justify-center md:justify-end">
+            <div className="relative w-48 h-48 md:w-[400px] md:h-[400px] rounded-2xl md:rounded-3xl overflow-hidden shadow-sm">
               <Image
                 src="/foto_elena.jpeg"
                 alt="Elena Cervera"
@@ -67,7 +67,7 @@ export default function Home() {
               Metodología entre sesiones <span className="text-[#749B8F]">conmigo</span>
             </h2>
 
-            <div className="space-y-3 md:space-y-6 text-gray-600 text-sm md:text-lg leading-relaxed text-justify order-3 lg:order-2">
+            <div className="space-y-3 md:space-y-6 text-gray-600 text-xs md:text-lg leading-relaxed text-justify order-3 lg:order-2 mb-10 md:mb-0">
               <p>
                 Es importante que la persona que vaya a terapia sepa que <strong className="font-semibold text-gray-700">"plan de ruta"</strong> vamos a llevar. Para que la intervención sea eficaz, es de vital importancia realizar una evaluación exhaustiva.
               </p>
@@ -152,8 +152,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mente Section - Abstract & Reflective */}
-      <section className="max-w-4xl mx-auto px-4 py-10 md:px-6 md:py-20">
+      {/* Mente Section - Abstract & Reflective (Hidden on mobile) */}
+      <section className="hidden md:block max-w-4xl mx-auto px-4 py-10 md:px-6 md:py-20">
         <div className="flex flex-col items-center">
           <div className="relative w-full max-w-[200px] md:max-w-sm h-32 md:h-64 mb-4 md:mb-8">
             <Image
@@ -213,7 +213,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="w-full bg-[#4A635D] text-white pt-10 pb-6 md:pt-20 md:pb-12">
-        <div className="max-w-7xl mx-auto px-4 md:px-12 grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-12 grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-8 md:gap-16">
           {/* Logo & Contact */}
           <div className="flex flex-col col-span-2 md:col-span-1 items-start text-left">
             <div className="flex flex-col mb-3 md:mb-4">
@@ -257,7 +257,7 @@ export default function Home() {
           </div>
 
           {/* Contact */}
-          <div className="flex flex-col items-start space-y-2 md:space-y-4">
+          <div className="flex flex-col items-start space-y-2 md:space-y-4 pl-2 md:pl-0">
             <h5 className="font-bold mb-1 md:mb-2 text-sm md:text-base">Contacto</h5>
             <div className="flex items-center gap-2 md:gap-3 text-xs md:text-sm">
               <Mail size={14} />
