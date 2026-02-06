@@ -4,7 +4,7 @@ import { Heart, Search, Smile, Users, MessageCircle, Phone, Mail, Instagram, Fac
 
 export default function Home() {
   return (
-    <div className="bg-[radial-gradient(circle_at_top_left,_#749B8F60_0%,_transparent_95%)] bg-white font-sans text-gray-700 min-h-screen">
+    <div className="bg-[radial-gradient(circle_at_top_left,_#749B8F60_0%,_transparent_95%)] bg-white font-sans text-gray-700 min-h-screen w-full overflow-x-hidden">
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto px-4 py-8 md:px-6 md:py-24">
         <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
