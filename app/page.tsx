@@ -9,7 +9,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-4 py-8 md:px-6 md:py-24">
         <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
           {/* Text Content - Left */}
-          <div className="order-2 md:order-1 space-y-3 md:space-y-4">
+          <div className="order-1 md:order-1 space-y-3 md:space-y-4">
             <h1 className="font-sans text-2xl md:text-4xl font-bold text-gray-800 tracking-tight">
               Hola, soy Elena Cervera
             </h1>
@@ -28,7 +28,7 @@ export default function Home() {
           </div>
 
           {/* Photo - Right */}
-          <div className="order-1 md:order-2 flex justify-end">
+          <div className="order-2 md:order-2 flex justify-end">
             <div className="relative w-48 h-48 md:w-[400px] md:h-[400px]">
               <Image
                 src="/foto_elena.jpeg"
@@ -92,7 +92,7 @@ export default function Home() {
                   <span className="text-2xl md:text-3xl font-bold text-[#749B8F]">1</span>
                 </div>
                 <div className="pt-1 md:pt-2">
-                  <h4 className="font-bold text-gray-800 uppercase tracking-wider mb-1 md:mb-2 text-sm md:text-lg">Sesión Inicial</h4>
+                  <h4 className="font-bold text-gray-800 uppercase tracking-wider mb-1 md:mb-2 text-lg">Sesión Inicial</h4>
                   <p className="text-gray-600 text-xs md:text-base leading-relaxed">
                     Nos conocemos y ponemos sobre la mesa aquello que nos preocupa. Establecemos las bases de la relación terapéutica.
                   </p>
@@ -178,7 +178,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
             <div className="text-center space-y-3 md:space-y-4">
               <Link href="/psicoterapia-integrativa">
-                <h3 className="font-sans text-lg md:text-3xl text-gray-700 font-bold underline decoration-[#749B8F] decoration-2 underline-offset-8 hover:text-[#749B8F] transition-colors cursor-pointer">
+                <h3 className="font-sans text-2xl md:text-3xl text-gray-700 font-bold underline decoration-[#749B8F] decoration-2 underline-offset-8 hover:text-[#749B8F] transition-colors cursor-pointer">
                   ¿Qué es la Psicoterapia <br /> Integrativa?
                 </h3>
               </Link>
@@ -195,15 +195,7 @@ export default function Home() {
       </section>
 
       {/* Decorative Separator */}
-      <div className="max-w-6xl mx-auto px-4 md:px-6">
-        <div className="flex items-center justify-center gap-4 py-6 md:py-8">
-          <div className="h-px bg-gray-200 flex-grow max-w-[100px]"></div>
-          <div className="w-2 h-2 rounded-full bg-[#749B8F]/30"></div>
-          <div className="w-3 h-3 rounded-full bg-[#749B8F]/50"></div>
-          <div className="w-2 h-2 rounded-full bg-[#749B8F]/30"></div>
-          <div className="h-px bg-gray-200 flex-grow max-w-[100px]"></div>
-        </div>
-      </div>
+      {/* Decorative Separator Removed */}
 
       {/* Quote Section - Transparent background to show main gradient */}
       <section className="w-full bg-transparent py-10 md:py-20 relative">
@@ -221,9 +213,9 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="w-full bg-[#4A635D] text-white pt-10 pb-6 md:pt-20 md:pb-12">
-        <div className="max-w-7xl mx-auto px-4 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-12 grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-16">
           {/* Logo & Contact */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="flex flex-col col-span-2 md:col-span-1 items-start text-left">
             <div className="flex flex-col mb-3 md:mb-4">
               <h4 className="font-serif text-base md:text-lg font-bold">Elena Cervera</h4>
               <p className="text-xs md:text-sm opacity-80">Psicóloga - Psicoterapeuta</p>
@@ -255,7 +247,7 @@ export default function Home() {
           </div>
 
           {/* Nav */}
-          <div className="flex flex-col items-center md:items-start space-y-2 md:space-y-4">
+          <div className="flex flex-col items-start space-y-2 md:space-y-4">
             <h5 className="font-bold mb-1 md:mb-2 text-sm md:text-base">Navegación</h5>
             <FooterLink href="/">Inicio</FooterLink>
             <FooterLink href="/sobre_mi">Sobre mí</FooterLink>
@@ -265,7 +257,7 @@ export default function Home() {
           </div>
 
           {/* Contact */}
-          <div className="flex flex-col items-center md:items-start space-y-2 md:space-y-4">
+          <div className="flex flex-col items-start space-y-2 md:space-y-4">
             <h5 className="font-bold mb-1 md:mb-2 text-sm md:text-base">Contacto</h5>
             <div className="flex items-center gap-2 md:gap-3 text-xs md:text-sm">
               <Mail size={14} />
