@@ -4,10 +4,10 @@ import { HelpCircle, ChevronDown } from "lucide-react";
 export default function PreguntasFrecuentes() {
     return (
         <div className="bg-[radial-gradient(circle_at_top_left,_#749B8F45_0%,_transparent_85%)] bg-white font-sans text-gray-700 min-h-screen">
-            <main className="max-w-4xl mx-auto px-6 py-16 md:py-24">
-                <div className="flex flex-col items-center mb-16 text-center">
+            <main className="max-w-4xl mx-auto px-4 py-8 md:px-6 md:py-24">
+                <div className="flex flex-col items-center mb-8 md:mb-16 text-center">
                     <HelpCircle className="text-[#749B8F] mb-4" size={48} />
-                    <h1 className="font-sans text-4xl md:text-5xl font-bold text-gray-800">
+                    <h1 className="font-sans text-2xl md:text-5xl font-bold text-gray-800">
                         Preguntas Frecuentes
                     </h1>
                 </div>
@@ -86,11 +86,11 @@ export default function PreguntasFrecuentes() {
 function FAQItem({ question, answer }: { question: string, answer: React.ReactNode }) {
     return (
         <div className="space-y-4 bg-white/50 p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-            <h3 className="text-xl md:text-2xl font-bold text-gray-800 flex items-start gap-3">
+            <h3 className="text-lg md:text-2xl font-bold text-gray-800 flex items-start gap-3">
                 <span className="text-[#749B8F] mt-1 shrink-0">¿</span>
                 <span>{question.replace(/^[¿?]/, '')}</span>
             </h3>
-            <div className="text-gray-600 leading-relaxed pl-8">
+            <div className="text-gray-600 leading-relaxed pl-8 text-sm md:text-base">
                 {answer}
             </div>
         </div>

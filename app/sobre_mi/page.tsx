@@ -6,12 +6,12 @@ export default function SobreMi() {
     return (
         <div className="bg-[radial-gradient(circle_at_top_left,_#749B8F45_0%,_transparent_85%)] bg-white font-sans text-gray-700 min-h-screen">
             {/* Hero Section */}
-            <section className="max-w-4xl mx-auto px-6 py-12 md:py-24">
-                <h1 className="font-sans text-4xl md:text-5xl font-bold text-gray-800 mb-8 md:mb-12 text-center">
+            <section className="max-w-4xl mx-auto px-4 py-8 md:px-6 md:py-24">
+                <h1 className="font-sans text-2xl md:text-5xl font-bold text-gray-800 mb-6 md:mb-12 text-center">
                     Sobre mí
                 </h1>
 
-                <div className="space-y-8 text-gray-600 leading-relaxed text-base md:text-lg">
+                <div className="space-y-6 md:space-y-8 text-gray-600 leading-relaxed text-sm md:text-lg">
                     <p className="text-justify">
                         Desde niña he tenido contacto con el mundo de la salud mental y emocional gracias a una familiar que era psiquiatra, siempre me produjo un gran interés saber el porqué del sufrimiento humano y poder aliviarlo. Al finalizar Trabajo Social me di cuenta que mi verdadera pasión era ser psicoterapeuta.
                     </p>
@@ -35,7 +35,7 @@ export default function SobreMi() {
                 {/* Qualifications Section */}
                 <div className="mt-20 space-y-12">
                     <div className="space-y-6">
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 border-b-2 border-[#749B8F] pb-2 inline-block">
+                        <h2 className="text-lg md:text-3xl font-bold text-gray-800 border-b-2 border-[#749B8F] pb-2 inline-block">
                             Formación Académica y Profesional
                         </h2>
 

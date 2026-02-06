@@ -4,8 +4,8 @@ import { Shield, FileText, Info } from "lucide-react";
 export default function Politicas() {
     return (
         <div className="bg-[radial-gradient(circle_at_top_left,_#749B8F45_0%,_transparent_85%)] bg-white font-sans text-gray-700 min-h-screen">
-            <main className="max-w-4xl mx-auto px-6 py-16 md:py-24">
-                <h1 className="font-sans text-4xl md:text-5xl font-bold text-gray-800 mb-12 text-center">
+            <main className="max-w-4xl mx-auto px-4 py-8 md:px-6 md:py-24">
+                <h1 className="font-sans text-2xl md:text-5xl font-bold text-gray-800 mb-8 md:mb-12 text-center">
                     Políticas y Aviso Legal
                 </h1>
 
@@ -14,7 +14,7 @@ export default function Politicas() {
                     <section className="space-y-6">
                         <div className="flex items-center gap-3 border-b-2 border-[#749B8F] pb-2 text-[#749B8F]">
                             <Info size={28} />
-                            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 uppercase">Aviso Legal</h2>
+                            <h2 className="text-lg md:text-3xl font-bold text-gray-800 uppercase">Aviso Legal</h2>
                         </div>
                         <div className="space-y-4 text-sm md:text-base leading-relaxed text-justify">
                             <p>
@@ -42,7 +42,7 @@ export default function Politicas() {
                     <section className="space-y-6">
                         <div className="flex items-center gap-3 border-b-2 border-[#749B8F] pb-2 text-[#749B8F]">
                             <Shield size={28} />
-                            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 uppercase">Política de Cookies</h2>
+                            <h2 className="text-lg md:text-3xl font-bold text-gray-800 uppercase">Política de Cookies</h2>
                         </div>
                         <div className="space-y-4 text-sm md:text-base leading-relaxed text-justify">
                             <p><strong>www.elenacerverapsicologa.com</strong></p>
@@ -88,7 +88,7 @@ export default function Politicas() {
                     <section className="space-y-6">
                         <div className="flex items-center gap-3 border-b-2 border-[#749B8F] pb-2 text-[#749B8F]">
                             <FileText size={28} />
-                            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 uppercase">Política de Privacidad</h2>
+                            <h2 className="text-lg md:text-3xl font-bold text-gray-800 uppercase">Política de Privacidad</h2>
                         </div>
                         <div className="space-y-4 text-sm md:text-base leading-relaxed text-justify">
                             <p>

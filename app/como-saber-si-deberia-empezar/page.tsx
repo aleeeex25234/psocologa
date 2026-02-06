@@ -4,19 +4,19 @@ import { Leaf, Info, MessageCircle, Heart, LifeBuoy } from "lucide-react";
 export default function ComoSaberSiEmpezar() {
     return (
         <div className="bg-[radial-gradient(circle_at_top_left,_#749B8F45_0%,_transparent_85%)] bg-white font-sans text-gray-700 min-h-screen">
-            <main className="max-w-4xl mx-auto px-6 py-16 md:py-24">
-                <div className="flex flex-col items-center mb-16 text-center">
+            <main className="max-w-4xl mx-auto px-4 py-8 md:px-6 md:py-24">
+                <div className="flex flex-col items-center mb-8 md:mb-16 text-center">
                     <Leaf className="text-[#749B8F] mb-4" size={48} />
-                    <h1 className="font-sans text-4xl md:text-5xl font-bold text-gray-800">
+                    <h1 className="font-sans text-2xl md:text-5xl font-bold text-gray-800">
                         ¿Cómo saber si debería empezar?
                     </h1>
                 </div>
 
-                <div className="space-y-12 text-gray-600 leading-relaxed text-base md:text-lg">
+                <div className="space-y-8 md:space-y-12 text-gray-600 leading-relaxed text-sm md:text-lg">
                     <section className="bg-white/50 p-8 rounded-2xl border border-gray-100 shadow-sm space-y-6">
                         <div className="flex items-center gap-3 text-[#749B8F] mb-4">
-                            <Info size={28} />
-                            <h2 className="text-2xl font-bold text-gray-800">¿Necesito ayuda?</h2>
+                            <Info size={24} />
+                            <h2 className="text-lg md:text-2xl font-bold text-gray-800">¿Necesito ayuda?</h2>
                         </div>
 
                         <p className="text-justify font-medium text-gray-800">

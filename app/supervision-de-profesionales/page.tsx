@@ -4,18 +4,18 @@ import { Users, BookOpen, ShieldCheck, Zap } from "lucide-react";
 export default function SupervisionProfesionales() {
     return (
         <div className="bg-[radial-gradient(circle_at_top_left,_#749B8F45_0%,_transparent_85%)] bg-white font-sans text-gray-700 min-h-screen">
-            <main className="max-w-4xl mx-auto px-6 py-16 md:py-24">
-                <div className="flex flex-col items-center mb-16 text-center">
+            <main className="max-w-4xl mx-auto px-4 py-8 md:px-6 md:py-24">
+                <div className="flex flex-col items-center mb-8 md:mb-16 text-center">
                     <Users className="text-[#749B8F] mb-4" size={48} />
-                    <h1 className="font-sans text-4xl md:text-5xl font-bold text-gray-800">
+                    <h1 className="font-sans text-2xl md:text-5xl font-bold text-gray-800">
                         Supervisión de Profesionales
                     </h1>
-                    <p className="mt-4 text-[#749B8F] font-bold text-xl md:text-2xl italic">
+                    <p className="mt-4 text-[#749B8F] font-bold text-lg md:text-2xl italic">
                         Un pilar fundamental para la excelencia clínica
                     </p>
                 </div>
 
-                <div className="space-y-12 text-gray-600 leading-relaxed text-base md:text-lg">
+                <div className="space-y-8 text-gray-600 leading-relaxed text-sm md:text-lg">
                     <section className="bg-white/50 p-8 rounded-2xl border border-gray-100 shadow-sm space-y-6 text-justify">
                         <p className="font-medium text-gray-800">
                             La supervisión clínica no es solo una recomendación ética, sino un requisito imprescindible para garantizar un ejercicio profesional responsable, riguroso y de alta calidad. En el complejo campo de la psicoterapia, el profesional necesita un espejo y un espacio de seguridad donde profundizar en su práctica.
@@ -30,7 +30,7 @@ export default function SupervisionProfesionales() {
                         <div className="bg-[#749B8F]/5 p-8 rounded-2xl border-l-4 border-[#749B8F] space-y-4">
                             <div className="flex items-center gap-3 text-[#749B8F]">
                                 <BookOpen size={24} />
-                                <h2 className="font-bold text-xl text-gray-800">Visión Global</h2>
+                                <h2 className="font-bold text-lg md:text-xl text-gray-800">Visión Global</h2>
                             </div>
                             <p className="text-sm">
                                 Analizamos la casuística desde una perspectiva integradora, identificando los nudos relacionales y asuntos nucleares que marcan el ritmo del proceso terapéutico.
@@ -40,7 +40,7 @@ export default function SupervisionProfesionales() {
                         <div className="bg-[#749B8F]/5 p-8 rounded-2xl border-l-4 border-[#749B8F] space-y-4">
                             <div className="flex items-center gap-3 text-[#749B8F]">
                                 <ShieldCheck size={24} />
-                                <h2 className="font-bold text-xl text-gray-800">Mundo Interno</h2>
+                                <h2 className="font-bold text-lg md:text-xl text-gray-800">Mundo Interno</h2>
                             </div>
                             <p className="text-sm">
                                 Profundizamos en las dinámicas de <strong>transferencia y contratransferencia</strong>. Comprender qué se moviliza en el psicoterapeuta es clave para transformar la vivencia en una herramienta diagnóstica potente.
@@ -50,7 +50,7 @@ export default function SupervisionProfesionales() {
                         <div className="bg-[#749B8F]/5 p-8 rounded-2xl border-l-4 border-[#749B8F] space-y-4">
                             <div className="flex items-center gap-3 text-[#749B8F]">
                                 <Zap size={24} />
-                                <h2 className="font-bold text-xl text-gray-800">Recursos Técnicos</h2>
+                                <h2 className="font-bold text-lg md:text-xl text-gray-800">Recursos Técnicos</h2>
                             </div>
                             <p className="text-sm">
                                 Exploramos técnicas y recursos específicos según cada caso, dotando al profesional de una "caja de herramientas" flexible, fundamentada y efectiva.
@@ -60,7 +60,7 @@ export default function SupervisionProfesionales() {
                         <div className="bg-[#749B8F]/5 p-8 rounded-2xl border-l-4 border-[#749B8F] space-y-4">
                             <div className="flex items-center gap-3 text-[#749B8F]">
                                 <Heart size={24} className="text-[#749B8F]" />
-                                <h2 className="font-bold text-xl text-gray-800">Autocuidado</h2>
+                                <h2 className="font-bold text-lg md:text-xl text-gray-800">Autocuidado</h2>
                             </div>
                             <p className="text-sm">
                                 La supervisión actúa como un contenedor emocional, facilitando el procesamiento del impacto del sufrimiento del otro y previniendo el desgaste profesional o burnout.

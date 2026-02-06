@@ -4,15 +4,15 @@ import { Coffee, Shield, Heart, Sparkles } from "lucide-react";
 export default function EnfrentareTerapia() {
     return (
         <div className="bg-[radial-gradient(circle_at_top_left,_#749B8F45_0%,_transparent_85%)] bg-white font-sans text-gray-700 min-h-screen">
-            <main className="max-w-4xl mx-auto px-6 py-16 md:py-24">
-                <div className="flex flex-col items-center mb-16 text-center">
+            <main className="max-w-4xl mx-auto px-4 py-8 md:px-6 md:py-24">
+                <div className="flex flex-col items-center mb-8 md:mb-16 text-center">
                     <Coffee className="text-[#749B8F] mb-4" size={48} />
-                    <h1 className="font-sans text-4xl md:text-5xl font-bold text-gray-800">
+                    <h1 className="font-sans text-2xl md:text-5xl font-bold text-gray-800">
                         ¿A qué me enfrentaré en terapia?
                     </h1>
                 </div>
 
-                <div className="space-y-8 text-gray-600 leading-relaxed text-base md:text-lg">
+                <div className="space-y-6 md:space-y-8 text-gray-600 leading-relaxed text-sm md:text-lg">
                     <section className="bg-white/50 p-8 rounded-2xl border border-gray-100 shadow-sm space-y-6">
                         <p className="text-justify font-medium text-gray-800">
                             En nuestra primera sesión, escucharé el motivo que te ha llevado a terapia y exploraremos tus áreas vitales junto con tus experiencias previas relacionadas con el malestar. Juntos acordaremos los objetivos de la intervención, los cuales iremos adaptando y concretando a medida que avanzamos en el proceso.

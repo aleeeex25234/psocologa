@@ -4,8 +4,8 @@ import { ChevronRight, Award, BookOpen, Users, Briefcase } from "lucide-react";
 export default function Curriculum() {
     return (
         <div className="bg-[radial-gradient(circle_at_top_left,_#749B8F45_0%,_transparent_85%)] bg-white font-sans text-gray-700 min-h-screen">
-            <main className="max-w-4xl mx-auto px-6 py-16 md:py-24">
-                <h1 className="font-sans text-4xl md:text-5xl font-bold text-gray-800 mb-12 text-center">
+            <main className="max-w-4xl mx-auto px-4 py-8 md:px-6 md:py-24">
+                <h1 className="font-sans text-2xl md:text-5xl font-bold text-gray-800 mb-8 md:mb-12 text-center">
                     Currículum completo
                 </h1>
 
@@ -14,7 +14,7 @@ export default function Curriculum() {
                     <section className="space-y-6">
                         <div className="flex items-center gap-3 border-b-2 border-[#749B8F] pb-2 text-[#749B8F]">
                             <Award size={28} />
-                            <h2 className="text-2xl md:text-3xl font-bold text-gray-800">Formación Académica</h2>
+                            <h2 className="text-lg md:text-3xl font-bold text-gray-800">Formación Académica</h2>
                         </div>
                         <ul className="space-y-4">
                             <CVItem text="Licenciada en Psicología especialidad en Clínica, colegiada A-1355. Habilitada como Psicóloga Sanitaria por el Gobierno de Aragón." />
@@ -30,7 +30,7 @@ export default function Curriculum() {
                     <section className="space-y-6">
                         <div className="flex items-center gap-3 border-b-2 border-[#749B8F] pb-2 text-[#749B8F]">
                             <BookOpen size={28} />
-                            <h2 className="text-2xl md:text-3xl font-bold text-gray-800">Cursos y Especializaciones</h2>
+                            <h2 className="text-lg md:text-3xl font-bold text-gray-800">Cursos y Especializaciones</h2>
                         </div>
                         <ul className="space-y-4">
                             <CVItem text="Experta en Trastornos de personalidad nivel básico y avanzado por la Asociación española para el Fomento y Desarrollo de la Psicoterapia AEFDP." />
@@ -55,7 +55,7 @@ export default function Curriculum() {
                     <section className="space-y-6">
                         <div className="flex items-center gap-3 border-b-2 border-[#749B8F] pb-2 text-[#749B8F]">
                             <Users size={28} />
-                            <h2 className="text-2xl md:text-3xl font-bold text-gray-800">Congresos y Conferencias</h2>
+                            <h2 className="text-lg md:text-3xl font-bold text-gray-800">Congresos y Conferencias</h2>
                         </div>
                         <ul className="space-y-4">
                             <CVItem text="X Congreso Español de Análisis Transaccional, 'El AT ante el cambio de milenio: la sociedad de la comunicación'." />
@@ -68,9 +68,9 @@ export default function Curriculum() {
                     <section className="space-y-6">
                         <div className="flex items-center gap-3 border-b-2 border-[#749B8F] pb-2 text-[#749B8F]">
                             <Briefcase size={28} />
-                            <h2 className="text-2xl md:text-3xl font-bold text-gray-800">Experiencia Profesional</h2>
+                            <h2 className="text-lg md:text-3xl font-bold text-gray-800">Experiencia Profesional</h2>
                         </div>
-                        <div className="space-y-4 text-gray-600 leading-relaxed italic">
+                        <div className="space-y-4 text-gray-600 leading-relaxed italic text-sm md:text-base">
                             <p>
                                 En el 2003 empecé a trabajar como Psicoterapeuta en el Centro Albor con el que sigo colaborando en la actualidad y desde el 2019 trabajo también en mi consulta privada.
                             </p>
@@ -93,7 +93,7 @@ export default function Curriculum() {
 
 function CVItem({ text }: { text: string }) {
     return (
-        <li className="flex items-start gap-3 text-gray-600">
+        <li className="flex items-start gap-3 text-gray-600 text-sm md:text-base">
             <ChevronRight className="text-[#749B8F] mt-1 shrink-0" size={20} />
             <span>{text}</span>
         </li>

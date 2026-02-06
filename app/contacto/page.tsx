@@ -4,18 +4,18 @@ import { Phone, Mail, MapPin, ExternalLink, Instagram, Facebook, Users } from "l
 export default function Contacto() {
     return (
         <div className="bg-[radial-gradient(circle_at_top_left,_#749B8F45_0%,_transparent_85%)] bg-white font-sans text-gray-700 min-h-screen">
-            <main className="max-w-6xl mx-auto px-6 py-12 md:py-24">
-                <h1 className="font-sans text-4xl md:text-5xl font-bold text-gray-800 mb-8 md:mb-12 text-center">
+            <main className="max-w-6xl mx-auto px-4 py-8 md:px-6 md:py-24">
+                <h1 className="font-sans text-2xl md:text-5xl font-bold text-gray-800 mb-8 md:mb-12 text-center">
                     Contacto
                 </h1>
 
-                <div className="grid md:grid-cols-2 gap-8 md:gap-12 mb-16 md:mb-20">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-12 mb-12 md:mb-20">
                     {/* Info Side */}
-                    <div className="space-y-12">
-                        <section className="space-y-6">
+                    <div className="space-y-8 md:space-y-12">
+                        <section className="space-y-4 md:space-y-6">
                             <div className="flex items-center gap-3 text-[#749B8F]">
                                 <MapPin size={24} className="md:w-7 md:h-7" />
-                                <h2 className="text-xl md:text-2xl font-bold text-gray-800">Ubicaciones</h2>
+                                <h2 className="text-lg md:text-2xl font-bold text-gray-800">Ubicaciones</h2>
                             </div>
                             <div className="space-y-4">
                                 <div className="bg-[#749B8F]/5 p-6 rounded-xl border-l-4 border-[#749B8F]">
@@ -38,7 +38,7 @@ export default function Contacto() {
                             </div>
                             <a
                                 href="tel:+34645132766"
-                                className="block bg-white shadow-sm border border-gray-100 p-6 rounded-xl hover:shadow-md transition-shadow text-xl font-bold text-gray-700"
+                                className="block bg-white shadow-sm border border-gray-100 p-6 rounded-xl hover:shadow-md transition-shadow text-lg md:text-xl font-bold text-gray-700"
                             >
                                 +34 645 13 27 66
                             </a>
@@ -47,7 +47,7 @@ export default function Contacto() {
                         <section className="space-y-6">
                             <div className="flex items-center gap-3 text-[#749B8F]">
                                 <Mail size={24} className="md:w-7 md:h-7" />
-                                <h2 className="text-xl md:text-2xl font-bold text-gray-800">Email</h2>
+                                <h2 className="text-lg md:text-2xl font-bold text-gray-800">Email</h2>
                             </div>
                             <a
                                 href="mailto:elenacerverapsico@gmail.com"
